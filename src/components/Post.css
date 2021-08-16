@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600&display=swap');
+
+.post {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 15px 25px 15px;
+    background-color: rgb(29, 44, 58);
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Georama', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.post img, .post div {
+    margin: 0 10px 0 10px;
+}
+
+.post-body {
+    display: flex;
+}
+
+.author-photo {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.article {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    line-height: 28px;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.author-nickname, .date {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(137, 137, 137, 0.814);
+}
+ 
+.post-text {
+    font-size: 15px;
+}
+
+.article .post-photo {
+    width: 100%;
+    margin: 12px 0 12px 0;
+    border-radius: 35px;
+}
+
+.actions {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.actions img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 650px) {
+    .post {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .author-photo {
+        width: 15%;
+        height: 15%;
+        border-radius: 50%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .post {
+        padding: 10px 10px 25px 10px;
+        background-color: rgb(29, 44, 58);
+    }
+
+    .author-photo {
+        width: 22%;
+        height: 22%;
+    }
+    
+    .article {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        line-height: 20px;
+    }
+
+    .author-name {
+        font-size: 14px;
+    }
+    
+    .author-nickname, .date {
+        font-size: 12px;
+    }
+     
+    .post-text {
+        font-size: 13px;
+    }
+    
+    .article .post-photo {
+        border-radius: 20px;
+    }
+    
+    .actions img {
+        width: 16px;
+        height: 16px;
+    }
+}

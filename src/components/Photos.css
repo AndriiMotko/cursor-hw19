@@ -1,0 +1,11 @@
+.galery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 15px 0 15px 0;
+}
+
+.galery img {
+    width: 275px;
+    margin: 10px 0 10px 0;
+}
